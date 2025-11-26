@@ -1,0 +1,9 @@
+fastapi
+uvicorn
+
+httpie          # receive requests from the terminal using curl
+httpx           # HTTP async client for tests and examples
+requests        # HTTP sync cliente for simple examples
+pytest          # Tests
+pytest-asyncio
+

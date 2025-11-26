@@ -58,3 +58,55 @@ Si querés jugar con todos los conceptos de Python (generators, itertools, decor
 Tests
 
 Fácil de usar con pytest + TestClient.
+
+
+
+
+
+
+
+
+
+
+
+
+✅ Cómo crear, activar y desactivar un venv en Python
+1) Crear entorno virtual
+
+En la carpeta de tu proyecto:
+
+python -m venv .venv
+
+
+(.venv es un nombre estándar y recomendado.)
+
+Linux / macOS
+source .venv/bin/activate
+
+3) Desactivar el entorno virtual
+
+Funciona igual en todos los sistemas:
+
+deactivate
+
+Cómo instalar paquetes desde requirements.txt
+
+Con el entorno virtual activado:
+pip install -r requirements.txt
+
+
+
+✅ 1. ¿Cómo hago para correr el sitio?
+
+Asumiendo que ya tenés tu venv activado y un main.py con FastAPI, el comando es:
+
+uvicorn app.main:app --reload
+
+
+app.main → ruta al módulo
+
+app → instancia de FastAPI dentro de ese módulo
+
+--reload → recarga automática en desarrollo
+
+Si pusiste el proyecto de otra forma, adaptamos el comando.
