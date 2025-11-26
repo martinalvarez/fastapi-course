@@ -30,3 +30,31 @@ fastapi-basico/
 ├── requirements.txt
 ├── pyproject.toml          # (opcional si usás poetry/pdm)
 └── README.md
+
+
+✔️ Por qué esta estructura es buena
+Web / Routers
+
+app/web/routers mantiene los endpoints limpios.
+
+Podés hacer routers chicos y agregar más (users, auth, etc).
+
+Services
+
+Aíslan la lógica de negocio → facilita testing y reuso.
+
+Data
+
+Repositorios simples, empezando en memoria (list, dict), luego podés crecer a SQLAlchemy si querés.
+
+Dependencies
+
+DI al estilo FastAPI: get_repository, get_service, etc.
+
+Utils
+
+Si querés jugar con todos los conceptos de Python (generators, itertools, decoradores), acá es buen lugar.
+
+Tests
+
+Fácil de usar con pytest + TestClient.
